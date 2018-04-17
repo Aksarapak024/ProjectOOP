@@ -26,6 +26,7 @@ public class FlowerDemo {
         ArrayList you = new ArrayList();
         char play;
         do{
+            you.clear();
         System.out.print("What's is your character name? > ");
         Scanner k = new Scanner(System.in);
         String userName = k.nextLine();
