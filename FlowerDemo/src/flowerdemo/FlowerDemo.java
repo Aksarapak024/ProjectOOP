@@ -91,7 +91,7 @@ public class FlowerDemo {
         case 2:
             char rt;
             System.out.println("+++++++++++++++ WAREHOUSE  +++++++++++++++");
-            System.out.println("\twater : " + water + "/30 Drops");
+            System.out.println("\twater : " + water + "/20 Drops");
             System.out.println("\tCash : " + money + " Gold");
             System.out.println("\tflower : " + flower + " Pansy");
             do {
@@ -103,7 +103,7 @@ public class FlowerDemo {
             break;
         case 3:
             char mw;
-            if(water < 30){
+            if(water < 20){
                 System.out.println("----------------------------------------------");
                 System.out.println("It will take 10 secounds to get 1 drop of water");
                 System.out.println("----------------------------------------------");
@@ -115,14 +115,14 @@ public class FlowerDemo {
                 Thread.sleep(1000);
                 water++;
                 System.out.println("\nwater +1");
-                System.out.println("Your water: " + water + "/30");
+                System.out.println("Your water: " + water + "/20");
                 System.out.print("Want to get more water? (Y/N) : " );
                 Scanner j = new Scanner(System.in);
                 String wmw = j.nextLine();
                 mw = wmw.toUpperCase().charAt(0);
                 }while(mw == 'Y');
             } else {
-                System.out.println("30/30 water");
+                System.out.println("20/20 water");
             }
             break;
         case 4:
